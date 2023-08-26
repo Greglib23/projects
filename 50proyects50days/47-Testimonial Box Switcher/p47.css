@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;   
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+}
+.container{
+    width: 48rem;
+    height: fit-content;
+    background-color: #476CE4;
+    border-radius: 13px;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    box-shadow: 0px 0px 17px 4px rgba(119, 119, 119, 0.75);
+}
+.leftsymbol, .rightsymbol{
+    width: 5rem;
+    height: 10rem;
+}
+.content{
+    width: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.time-bar{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    transition: left 5s linear;
+    position: relative;
+    left: -100%;
+}
+.text{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.7rem;
+}
+.profile{
+    margin: 2rem 0rem .5rem 0rem;
+    width: fit-content;
+    height: 6rem;
+    display: flex;
+}
+.pic{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.pic img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: .6rem;
+}
+.name{
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.job{
+    margin-top: 1rem;
+}
+.fas{
+    color: #7F98EC;
+    font-size: 2rem;
+    position: relative;
+    top: 6.5rem;
+}
+.first{
+    right: -50%;
+}
+.second{    
+    left: 0%;
+    transform-origin: 50% 50%;
+    transform: rotate(180deg);
+}

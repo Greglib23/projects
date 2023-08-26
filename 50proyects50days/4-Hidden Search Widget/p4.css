@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(#7D5FFF,#775CF1);
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: fit-content;
+    height: 3.5rem;
+    background-color: white;
+    display: flex;
+    border: solid rgba(0, 0, 0, 0.363) 1px;
+    border-radius: 3px;
+}
+.search-but{
+    width: 3.5rem;
+    height: 3.5rem;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#input1{
+    width: 0rem;
+    margin: 0rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border: 0px solid;
+    background-color: transparent;
+    transition: all .4s ease;
+}
+input:focus{
+    outline: none;
+}
+#chkbox{
+    display: none;
+}
+label{
+    width: 3.5rem;
+    height: 3.5rem;
+    z-index: 100;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    position: relative
+}
+#chkbox:checked ~ #input1{
+    width: 14.5rem;
+    margin: 0rem 1rem;
+}

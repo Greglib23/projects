@@ -1,0 +1,110 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #2A2A72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+}
+.search{
+    outline: none;
+    background-color: #4C2885;
+    width: 40%;
+    height: 3.2rem;
+    border: none;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    color: white;
+    user-select: none;
+}
+.search::placeholder{
+    color: rgb(170, 170, 170);
+}
+
+.profile{
+    height: fit-content;
+    width: fit-content;
+    padding: 3rem;
+    margin: 2rem;
+    background-color: #4C2885;
+    border-radius: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.pic{
+    height: 8.5rem;
+    width: 8.5rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url("https://avatars.githubusercontent.com/u/5550850?v=4");
+    border: 10px solid #2a2a72;
+    align-self: flex-start;
+}
+.info{
+    color: white;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 500;
+    font-weight: bold;
+}
+.description{
+    width: 30rem;
+    padding-top: 1.5rem;
+    letter-spacing: .05rem;
+    color: #eee;
+}
+.data{
+    padding-top: 1.5rem;
+    padding-right: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.repos{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30rem;
+    height: fit-content;
+}
+.rep{
+    background-color: #212A72;
+    margin: .2rem .4rem;
+    padding: .4rem;
+    font-size: .8rem;
+    display: flex;    
+    word-break: keep-all;
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+    text-decoration: none;
+    color:white
+}
+.not-found{
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    padding: 4rem 3rem;
+    background-color: #4C2885;
+    border-radius: 15px;
+    display: none;
+}
+.visible{
+    display: flex;
+}

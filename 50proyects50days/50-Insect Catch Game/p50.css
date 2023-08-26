@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');    
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #516DFF;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    transition: all .5s ease;
+    justify-content: start;
+    height: max-content;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    align-items: start;
+}
+h1,h2{
+    text-align: center;
+}
+.first,.second,.game{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.game{
+    justify-content: start;
+}
+.butt-play{
+    padding: 1rem 1.5rem;
+    background-color: #FFFFFF;
+    color: #516DFF;
+    margin-top: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.choises{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.choise{
+    height: 10rem;
+    width: 10rem;
+    border:solid white 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.choise img {
+    width: 6rem;
+    height: 6rem;
+}
+.choise:hover{
+    background-color: white;
+    color: #516DFF;
+}
+.time-score{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    z-index: 10;
+    margin-top: 2rem;
+}
+.insect{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    user-select: none;
+    cursor: pointer;
+    transition: transform .5s ease, opacity 1s;
+    /* transform: scale(3); */
+}
+.announcement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.445);
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    justify-content: space-around;
+    transition: all .5s ease;
+    top: -100%;
+    z-index: 10;
+}
+.text{
+    text-align: center;
+}

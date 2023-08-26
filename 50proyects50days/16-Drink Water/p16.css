@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3494E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+h3{
+    font-weight: 300;
+}
+.drinked{
+    color: black;
+    height: 25rem;
+    width: 12rem;
+    border-radius: 0px 0px 50px 50px;
+    background-color: white;
+    border: solid 5px #144FC6;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.glasses{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+}
+.glass{
+    color:#144FC6;
+    height: 8rem;
+    width: 4.5rem;
+    border: solid 5px #144FC6;
+    background-color: white;
+    margin: .5rem;
+    border-radius: 0% 0% 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    user-select: none;
+    cursor: pointer;
+    transition:.3s linear;
+}
+.percentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    background-color: #3494E4;
+    color:#144FC6;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+}
+.remained{
+    visibility: hidden;
+    display: flex;
+}
+.remained.active{
+    visibility: visible;
+    color: #144FC6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    flex-direction: column;
+    height: 100%;
+    transition:.3s linear;
+}
+.remained span:first-child{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.remained span:last-child{
+    font-size: .8rem;
+    font-weight: 300;
+}
+.glass.active{
+    background-color: #6AB3F8;
+    color: white;
+}
+.percentage.active{
+    visibility: visible;
+    display: flex;
+    height: 12,5%;
+    background-color: #6AB3F8;
+    transition:.3s linear;
+}

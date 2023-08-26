@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height:fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    overflow:initial;
+}
+nav{
+    height: 5rem;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 15%;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    transition: all .2s linear;
+}
+.options{
+    display: flex;
+    font-size: 1.2rem;
+    width: 30%;
+}
+.option{
+    margin: 0% 5%;
+    transition: all .2s linear;
+}
+.option:nth-child(1){
+    color: rgb(202, 20, 20);
+}
+.option:hover{
+    color: rgb(202, 20, 20);
+    transform: translateX(.05rem) translateY(-.05rem);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    background-image: url(https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top:0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: #0000008a;
+}
+
+h1{
+    font-size: 3rem;
+    z-index: 4;
+}
+span{
+    z-index: 4;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.content{
+    width: 100%;
+    padding: 1rem 15%;
+    color:black;
+    margin-bottom: 3rem;
+}
+h2{
+    margin: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+}
+.content span{
+    color: rgb(95, 95, 95);
+    font-size: 1rem;
+    padding: 1rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+.change {
+    color:black;
+}
+nav.change{
+    height: 3.5rem;
+    background-color: white;
+}

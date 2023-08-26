@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2C3E50;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container{
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+}
+.triangle1{
+    height: 10rem;
+    width: 10rem;
+    border-top: solid transparent 5rem;
+    border-bottom: solid transparent 5rem;
+    border-left: solid white 5rem;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: all .5s linear;
+}
+.triangle2{
+    height: 10rem;
+    width: 10rem;
+    border-left: solid transparent 5rem;
+    border-right: solid transparent 5rem;
+    border-bottom: solid white 5rem;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: all .5s linear;
+}

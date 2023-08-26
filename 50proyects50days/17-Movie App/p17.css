@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #22254B;
+}
+.top-bar{
+    background-color: #373B69;
+    height: 6rem;
+    width: 100%;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+}
+#search{
+    color: white;
+    font-size: 1.3rem;
+    background-color:   #373B69;
+    height: 3.6rem;
+    margin: 0rem 2rem 0rem 0rem ;
+    border: solid #22254B 2.5px;
+    border-radius: 50px;
+    width: 26rem;
+    padding-left: 1rem;
+}
+#search::placeholder{
+    color: #757bc4;
+}
+#search:focus{
+    background-color: #22254B;
+    border: solid #22254B 2.5px;
+    outline: none;
+}
+.movies{
+    background-color: #22254B;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.movie{
+    background-color: white;
+    height: 43rem;
+    width: 24rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.back-image{
+    width: 100%;
+    background-color: rgb(16, 26, 75);
+    height: 35rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+    width: 100%;
+    background-color: #373B69;
+    align-items: center;
+}
+.sinopsis{
+
+    height: fit-content;
+    width: 24rem;
+    background-color: white;
+    transform: translateX(-100%) translateY(43rem);
+}
+.movie:hover > .sinopsis{
+    transform: translateY(calc(43rem - 100%)) translateX(-100%);
+    transition: .3s ease;
+}
+.title{
+    color: white;
+    padding: 1rem;
+    width: 70%;
+}
+.valoration{
+    height: 2.5rem;
+    width: 3.5rem;
+    background-color: #22254B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:orange;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    margin: 0 1rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 2rem;
+    padding: 2rem 1.3rem 1rem 1.3rem;
+}
+.content{
+    padding: 0rem 1.5rem 2rem 1.5rem;
+    display: inline-block;
+    font-size: 1.4rem;
+}
+::-webkit-scrollbar{
+    width: .5rem;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    width: .5rem;
+    background-color: rgb(65, 65, 65);
+}

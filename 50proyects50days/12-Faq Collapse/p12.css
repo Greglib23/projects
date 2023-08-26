@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    display: none;
+}
+
+h1 {
+    padding: 2.5rem 0rem 1rem 0rem;
+    font-size: 2.7rem;
+    transform: translatey(1.3rem);
+}
+
+h2 {
+    margin: 2rem 2rem;
+    font-size: 1.6rem;
+}
+
+.butt-container{
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    height: 2.3rem;
+    width: 2.3rem;
+    right: 2rem;
+    top: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.item.active .xpand-bttn{
+    display: none;
+}
+.xpand-bttn {
+    height: .8rem;
+    width: .8rem;
+    border: solid 3px black;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg) translateX(-.2rem) translateY(-.2rem);
+}
+    
+
+.box-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    
+    background-color: #F0F0F0;
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    border: solid #999 1px;
+    border-radius: 9px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s ease;
+}
+.item.active{
+    background-color: #FFFFFF;
+}
+
+.item.active::before,
+.item.active::after {
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    color: #2ecc71;
+    font-size: 8rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+
+}
+
+.item.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+span {
+    display: none;
+}
+.item.active span{
+    margin: 2rem 0rem 3rem 2rem;
+    font-size: 1.3rem;
+    display: block;
+}
+.container {
+    width: 50%;
+}
+.item.active .butt-container{
+    background-color: #9fa4a8;
+}
+.item.active .cross-bttn1,
+.item.active .cross-bttn2{
+    height: 1rem;
+    width: 1rem;
+    border-right: solid 3px white;
+    position: absolute;
+
+}
+
+.item.active .cross-bttn1{
+    transform: rotate(45deg) translateX(-.4rem);
+    
+
+}
+.item.active .cross-bttn2{
+    transform: rotate(-45deg) translateX(-.4rem);
+}

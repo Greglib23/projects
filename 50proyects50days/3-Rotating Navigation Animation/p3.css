@@ -1,0 +1,147 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #333333;
+    height: auto;
+    width: 100vw;
+}
+
+.container {
+    background-color: white;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    transform-origin: 0% 0%;
+    transition: all .9s ease-out;
+}
+
+.main-article {
+    margin: 100px 20%;
+    padding: 0%;
+    width: 60%;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-menu {
+    background-color: #FF7979;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: -6rem;
+    top: -6rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    transition: all .9s;
+}
+
+.x {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 2.7rem;
+    top: 1.5rem;
+    position: relative;
+
+}
+
+.line-menu {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    left: 1.5rem;
+    top: 1.5rem;
+    position: relative;
+}
+
+.line-menu span {
+    border-top: solid white 4px;
+    height: .3rem;
+    width: 1.5rem;
+    margin: 0%;
+}
+
+.x span {
+    border-top: solid white 4px;
+    height: .3rem;
+    width: 1.5rem;
+    margin: 0%;
+}
+.x span:nth-child(1) {
+    border-top: solid white 4px;
+    height: .3rem;
+    width: 1.5rem;
+    margin: 0%;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0.5rem;
+    left: 0.2rem;
+}
+.x span:nth-child(2) {
+    border-top: solid white 4px;
+    height: .3rem;
+    width: 1.5rem;
+    margin: 0%;
+    transform: rotate(45deg);
+
+}
+#menu-chkbox {
+    display: none;
+}
+#menu-chkbox:checked ~ .btn-menu {
+    transform: rotate(-90deg);
+}
+#menu-chkbox:checked ~ .container {
+    transform: rotate(-20deg);
+}
+label{
+    height: 2rem;
+    display: block;
+    width: 2rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    z-index: 4;
+}
+nav{
+    z-index: 5;
+    position: fixed;
+    left: -100%;
+    bottom: 2rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    transition: all .9s;
+}
+nav div{
+    margin-bottom: 2rem;
+    color: white;
+}
+nav img {
+    height: 1.5rem;
+}
+svg{
+    height: 1.6rem;
+    width: 1.6rem;
+}
+.nav-opt {
+    display: flex;
+    align-content: center;
+}
+#menu-chkbox:checked ~ nav{
+    left:3rem;
+}

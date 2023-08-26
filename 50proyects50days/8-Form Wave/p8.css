@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #4682B4;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #2A4E6C;
+    border-radius: 5px;
+    width: 23.5rem;
+    height: 27rem;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin: 3rem 3rem 1rem 3rem;
+    color:white;
+}
+.register a{
+    color:#6badd3;
+    margin-left: .3rem;
+    text-decoration: none;
+}
+.register a:hover{
+    color:#9ec5db
+}
+#login{
+    cursor: pointer;
+}
+.input-box{
+    margin: 0rem 2rem 2rem 2rem;
+    width: 80%;
+}
+.input-box span{
+    color:white;
+    position:relative;
+    font-size: 1.3rem;
+    top: 1rem;
+}
+input{
+    border:none;
+    background:none;
+    border-bottom: solid white .15rem;
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+#login{
+    width: 75%;
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    border:none;
+    font:inherit;
+    transition: all .4s;
+    border:none;
+    color:black;
+}
+#login:hover{
+    background-color: #579ab1;
+}
+
+.container span{
+    color:white;
+    font-weight: bold;
+}
+.register{
+    margin-top: .3rem;
+    display: flex;
+    align-items: center;    
+}
+.active{
+    transform: translatey(-2rem);
+    color:#9ec5db !important;
+}
+
+.field{
+    align-items: start;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    height: 2rem;
+    position:relative;
+    top:-1rem;
+}
+.field span{
+    transition: transform .3s cubic-bezier(.76,.21,.32,.9), color .2s ease-in;
+    font-size: 1rem;
+    user-select: none;
+}
+#email-field{
+    position: relative;
+    top:-2rem
+}
+
+#email-input {
+    position: relative;
+    top: 1rem;
+    padding-bottom:.7rem;
+}
+
+#pass-input{
+    position: relative;
+    top:0rem;
+    padding-bottom:.7rem;
+}
+#pass-field{
+    position: relative;
+    top:-3rem
+}

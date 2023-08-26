@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-Event Keycodes</title>
+    <link rel="stylesheet" href="p11.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body onkeydown="onKeyDownHandler(event);"">
+    <input type="checkbox" id="chkbx">
+    <label for="chkbx">
+    <div id="initial-text">
+        <span>Press any key to get the keyCode</span>
+    </div>
+    </label>
+    <div id="container">
+        <div class="item">
+            <span>event.key</span>
+            <div class="box">1</div>
+        </div>
+        <div class="item">
+            <span>event.keyCode</span>
+            <div class="box">2</div>
+        </div>
+        <div class="item">
+            <span>event.Code</span>
+            <div class="box">3</div>
+        </div>
+    </div>
+    <script src="p11.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(50,78,210,1) 0%, rgba(214,0,255,1) 100%);
+}
+.container{
+    height: fit-content;
+    width: fit-content;
+    padding: 6rem 2rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.75);
+    background-color: rgb(95, 95, 218);
+    color: white;
+}
+.button-dot{
+    background-color: #D0D0D0;
+    height: 3rem;
+    width: 6rem;
+    margin: .7rem;
+    border-radius: 3rem;
+    position: relative;
+}
+.dot{
+    height: 2.6rem;
+    width: 2.6rem;
+    position: absolute;
+    top: .2rem;
+    background-color: white;
+    left: .2rem;
+    border-radius: 3rem;
+    transform-origin: 50% 50%;
+    animation-duration: .3s;
+}
+.text{
+    position: absolute;
+    left: 110%;
+    top: .9rem;
+    font-size: 1.2rem;
+}
+h2{
+    margin-bottom: 2rem;
+}
+.button-dot.active{
+    background-color: #8E44AD;
+}
+.button-dot.active .dot{
+    animation-name: moveOn;
+    left:3.2rem;    
+}
+.button-dot.inactive .dot{
+    animation-name: moveOff;
+    left:.2rem;    
+}
+
+@keyframes moveOn {
+    0%{
+        left:.2rem;
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        left: 3.2rem;
+        right: .2rem;
+        transform: scale(1);
+    }
+}
+
+@keyframes moveOff {
+    0%{
+        left: 3.2rem;
+        right: .2rem;
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        left:.2rem;
+    }
+}

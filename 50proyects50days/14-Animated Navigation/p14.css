@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+#white{
+    background-color: #EAFBFF;
+    height: 50vh;
+    width: 100vw;
+}
+#blue{
+    background-color: #5290F9;
+    height: 50vh;
+    width: 100vw;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.8);
+    border-radius: 3px;
+    width: 28rem;
+    height: 6rem;
+    display: flex;
+    transform: translateY(-3rem) translateX(-14rem);
+    justify-content: space-between;
+    transition: all .6s linear;
+}
+span{
+    font-size: 1.2rem;
+    transition: all .6s linear;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    transition: all .6s linear;
+}
+
+.dinButt{
+    height: 2rem;
+    width: 2rem;
+}
+
+.bar1,.bar2{
+    border-bottom: solid 3px #5290f9;
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    transition: all .6s linear;
+}
+.bar1{
+    transform: rotate(45deg) translateX(.3rem) translateY(-.7rem);
+}
+.bar2{
+    transform: rotate(-45deg) translateY(-.4rem);
+}
+input{
+    display: none;
+}
+#action:checked ~ .container {
+    width: 6rem;
+    transform: translateY(-3rem) translateX(-3rem);
+}
+#action:checked ~ .container > .options{
+    width: 0%;
+    opacity: 0;
+    transform: translateX(13rem);
+}
+#action:checked ~ .container > .options > span{
+    transform: rotateY(360deg);
+}
+
+#action:checked ~ .container > label > .dinButt > .bar1{
+    transform: rotate(720deg) translateX(.2rem) translateY(-.9rem);
+}
+
+#action:checked ~ .container > label > .dinButt > .bar2{
+    transform: rotate(-720deg) translateX(.2rem) translateY(-.1rem);
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.draw-area{
+    border: solid steelblue 2px;
+    border-top: none;
+    height: 90%;
+    /* display: block; */
+}
+.tools{
+    background-color: steelblue;
+    border: solid slateblue 2px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.firsts{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.option, .delete{
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.delete{
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cross{
+    border: solid black 1px;
+    border-radius: 3px;
+    width: 100%;
+    height: calc(100% - .2rem);
+    margin: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color{
+    background-color: whtie;
+    width: 3rem;
+    height: 2.8rem;
+    margin: 0;
+    padding: 0;
+    border: solid grey 1px;
+    appearance: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

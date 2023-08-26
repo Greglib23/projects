@@ -1,0 +1,126 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -.1rem;
+}
+
+.heart {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    margin: 0px;
+    transform: translateY(.3rem)
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: .75rem;
+    height: 1.25rem;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+}
+
+.heart::before {
+    left: .75rem;
+    top: 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart::after {
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+h3 {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    user-select: none;
+}
+
+span {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    user-select: none;
+}
+
+.image {
+    width: 20rem;
+    height: 30rem;
+    margin-top: 1rem;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.75);
+    background-image: url(https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);
+    overflow: hidden;
+    position: relative;
+}
+
+.pop-heart {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 50px;
+    animation-name: resize;
+    animation-duration: .5s;
+}
+
+.pop-heart::before,
+.pop-heart::after {
+    content: "";
+    width: 52px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+}
+
+.pop-heart::before {
+    left: 50px;
+    top: 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.pop-heart::after {
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+@keyframes resize {
+    0%{
+        display: flex;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+        display: none;
+    }
+}
