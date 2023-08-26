@@ -23,15 +23,24 @@ let validColor = ['#292e3d', '#494f64', '#6a7086', '#999fb4', '#ffffff']
 let idIntRain
 let flag = false
 
-changeContent()
-preloadImages()
-asignBackgrounds()
-checkAnimation()
+
 idTime = setTimeout(() => {
     document.body.style.backgroundColor = 'rgb(19, 22, 31)'
-    animation.remove()
+    idTime2 = setTimeout(() => {
+        animation.remove()
+        clearTimeout(idTime2)
+    }, 200);
+    changeContent()
+    document.querySelector('nav').classList.remove('hide')
+    document.querySelector('footer').classList.remove('hide')
+    preloadImages()
+    asignBackgrounds()
+    timeId3 = setTimeout(() => {
+        checkAnimation()
+        clearTimeout(timeId3)
+    }, 1000);
     clearTimeout(idTime)
-}, 2500);
+}, 3100);
 
 navOptions.forEach(option => {
     option.addEventListener('click', reloadPos)
